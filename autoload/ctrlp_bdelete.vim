@@ -36,7 +36,7 @@ function! ctrlp_bdelete#mappings(...)
     call call(s:ctrlp_bdelete_user_func, a:000)
   endif
 
-  nnoremap <buffer> <silent> <c-@> :call <sid>DeleteMarkedBuffers()<cr>
+  nnoremap <buffer> <silent> <c-_> :call <sid>DeleteMarkedBuffers()<cr>
 endfunction
 
 function! s:DeleteMarkedBuffers()
